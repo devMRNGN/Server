@@ -14,6 +14,12 @@ async function routes(fastify, options) {
     return { hello: "world" };
   });
 
+  fastify.get("/users", async (request, reply) => {
+    const users = await prisma.user.findMany();
+
+    return users;
+  });
+
   //funcionando
   fastify.post("/cadastrar", async (request, reply) => {
     const { username, password, email, photo, name, curso } = request.body;

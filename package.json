@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Servidor que utiliza prisma para criar usuarios",
   "main": "index.js",
-  "type": "module",
   "engines": {
     "node": "18.x"
   },
