@@ -9,7 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "vercel-build": "npx prisma migrate deploy"
+    "build": "npx prisma migrate deploy && npx prisma generate",
+    "vercel-build": "npx prisma migrate deploy",
+    "postinstall": "prisma generate"
   },
   "author": "devmarangoni.com",
   "license": "MIT",
