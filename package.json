@@ -1,0 +1,24 @@
+{
+  "name": "serverdevmrngn",
+  "version": "1.0.0",
+  "description": "Servidor que utiliza prisma para criar usuarios",
+  "main": "index.js",
+  "dependencies": {
+    "@fastify/cors": "^8.4.0",
+    "@prisma/client": "^5.4.2",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "devmarangoni.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "javascript": "^1.0.0",
+    "prisma": "^5.4.2",
+    "ts-node": "^10.9.1"
+  }
+}
